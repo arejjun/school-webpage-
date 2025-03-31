@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examination Information</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #092c22;
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            text-align: center;
+        }
+
+        .announcement-banner {
+            background-color: #e74c3c;
+            color: white;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #eee;
+        }
+
+        .exam-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .exam-card {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 1.5rem;
+            border-left: 4px solid #3498db;
+        }
+
+        .exam-card h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .exam-card p {
+            margin: 0.5rem 0;
+            color: #666;
+        }
+
+        .policy-list {
+            list-style: none;
+        }
+
+        .policy-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .policy-list li::before {
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .section {
+                padding: 1rem;
+            }
+
+            .exam-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Examination Information</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="announcement-banner">
+            <strong>Important Notice:</strong> Mid-term examinations will commence from March 15th, 2025
+        </div>
+
+        <section class="section">
+            <h2>Upcoming Examinations</h2>
+            <div class="exam-grid">
+                <div class="exam-card">
+                    <h3>Mathematics</h3>
+                    <p><strong>Date:</strong> March 15, 2025</p>
+                    <p><strong>Time:</strong> 9:00 AM - 12:00 PM</p>
+                    <p><strong>Venue:</strong> Hall A</p>
+                </div>
+
+                <div class="exam-card">
+                    <h3>Physics</h3>
+                    <p><strong>Date:</strong> March 17, 2025</p>
+                    <p><strong>Time:</strong> 2:00 PM - 5:00 PM</p>
+                    <p><strong>Venue:</strong> Hall B</p>
+                </div>
+
+                <div class="exam-card">
+                    <h3>Chemistry</h3>
+                    <p><strong>Date:</strong> March 19, 2025</p>
+                    <p><strong>Time:</strong> 9:00 AM - 12:00 PM</p>
+                    <p><strong>Venue:</strong> Hall C</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Examination Schedule</h2>
+            <p>The complete examination schedule for the semester is available below. Please note that all times are in local time (EST).</p>
+            <div class="exam-grid">
+                <div class="exam-card">
+                    <h3>Week 1 (March 15-19)</h3>
+                    <p>Core Subjects</p>
+                </div>
+                <div class="exam-card">
+                    <h3>Week 2 (March 22-26)</h3>
+                    <p>Elective Subjects</p>
+                </div>
+                <div class="exam-card">
+                    <h3>Week 3 (March 29-31)</h3>
+                    <p>Practical Examinations</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Examination Policies</h2>
+            <ul class="policy-list">
+                <li>Students must arrive at least 30 minutes before the examination start time.</li>
+                <li>Valid student ID cards are mandatory for entry into examination halls.</li>
+                <li>Electronic devices, including mobile phones, are strictly prohibited during examinations.</li>
+                <li>Students are required to bring their own stationery items.</li>
+                <li>No student will be allowed to leave the examination hall in the first 30 minutes.</li>
+                <li>Special arrangements for students with disabilities must be requested at least two weeks in advance.</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics - Learn Together School</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            background-color: #07352a;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #196854;
+            margin-bottom: 1rem;
+        }
+
+        .courses {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .course {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .course h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .event {
+            background: #f8f9fa;
+            padding: 10px;
+            border-left: 3px solid #2c3e50;
+        }
+
+        .faculty {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .teacher {
+            text-align: center;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+
+        .teacher-image {
+            width: 100px;
+            height: 100px;
+            background: #ddd;
+            border-radius: 50%;
+            margin: 0 auto 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Academics</h1>
+        <p>Learn Together School</p>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2>Our Courses</h2>
+            <div class="courses">
+                <div class="course">
+                    <h3>Mathematics</h3>
+                    <p>Core mathematics including algebra, geometry, and calculus.</p>
+                </div>
+                <div class="course">
+                    <h3>Sciences</h3>
+                    <p>Physics, chemistry, and biology with lab work.</p>
+                </div>
+                <div class="course">
+                    <h3>English</h3>
+                    <p>Language arts, literature, and composition.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Academic Calendar</h2>
+            <div class="calendar">
+                <div class="event">
+                    <h3>Fall Term</h3>
+                    <p>Sept 1 - Dec 15</p>
+                </div>
+                <div class="event">
+                    <h3>Spring Term</h3>
+                    <p>Jan 5 - May 20</p>
+                </div>
+                <div class="event">
+                    <h3>Summer Term</h3>
+                    <p>June 1 - Aug 15</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Faculty</h2>
+            <div class="faculty">
+                <div class="teacher">
+                    <div class="teacher-image">MS</div>
+                    <h3>Mr. Smith</h3>
+                    <p>Mathematics</p>
+                </div>
+                <div class="teacher">
+                    <div class="teacher-image">DJ</div>
+                    <h3>Dr. Johnson</h3>
+                    <p>Sciences</p>
+                </div>
+                <div class="teacher">
+                    <div class="teacher-image">MW</div>
+                    <h3>Ms. Wilson</h3>
+                    <p>English</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
