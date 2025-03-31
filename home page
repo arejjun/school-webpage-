@@ -1,0 +1,237 @@
+school home page 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Together Public School</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(rgba(31, 191, 164, 0.635), rgba(0, 0, 0, 0.7)),
+                        url('/api/placeholder/1920/1080') center/cover fixed;
+            color: white;
+            min-height: 100vh;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 1rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .school-logo {
+            height: 50px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            list-style: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: #e74c3c;
+            transform: translateY(-2px);
+        }
+
+        .banner {
+            margin-top: 120px;
+            text-align: center;
+            padding: 4rem 2rem;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .banner-image {
+            max-width: 1100px;
+            height: auto;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .banner h1 {
+            font-size: 3rem; 
+            margin-bottom: 1rem;
+            animation: fadeIn 1s ease-in;
+        }
+
+        .banner p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .news-section {
+            background: rgba(24, 204, 123, 0.1);
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 1200px;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+        }
+
+        .news-section h2 {
+            color: #e74c3c;
+            margin-bottom: 1rem;
+        }
+
+        .news-ticker {
+            height: 50px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .news-ticker ul {
+            list-style: none;
+            animation: scroll 20s linear infinite;
+        }
+
+        .news-ticker li {
+            padding: 0.5rem 0;
+            color: white;
+        }
+
+        .content-section {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+        }
+
+        .content-section h2 {
+            color: #e74c3c;
+            margin-bottom: 1rem;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .content-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .content-image:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes scroll {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-200%); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .banner h1 {
+                font-size: 2rem;
+            }
+
+            .banner-image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="z.png" alt="School Logo" class="school-logo">
+            Learn Together Public School
+        </div>
+        <nav>
+            <ul>
+                <li><a href="http://localhost/admissionform.php">New Admission</a></li>
+                <li><a href="placementpage.html">Placement</a></li>
+                <li><a href="alumni.html">Alumni</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="abouteus.html">About Us</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="examination.html">Examination</a></li>
+                <li><a href="studentsupport.html">Student Support</a></li>
+                <li><a href="library.html">Library</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <img src="Slider-3.jpg" alt="School Banner" class="banner-image">
+            <h1>Welcome to Learn Together</h1>
+            <p>Nurturing Minds, Building Futures - Where Excellence Meets Education</p>
+        </section>
+
+        <section class="news-section">
+            <h2>Latest Updates</h2>
+            <div class="news-ticker">
+                <ul>
+                    <li>🎓 Annual Day Celebrations - Save the date: December 15th</li>
+                    <li>📚 New Library Resources Available for Students</li>
+                    <li>🏆 Our School Wins National Science Competition</li>
+                    <li>📅 Parent-Teacher Meeting Scheduled for Next Week</li>
+                    <li>🎯 Sports Day Registration Now Open</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>About Our School</h2>
+            <div class="content-grid">
+                <img src="slider-1.jpg" alt="School Life" class="content-image">
+                <p>Learn Together Public School is committed to providing quality education through innovative teaching methods and a supportive learning environment. Our dedicated faculty and state-of-the-art facilities ensure that every student receives the best possible education for their future success.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
